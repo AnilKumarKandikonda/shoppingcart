@@ -1,5 +1,6 @@
 import * as actionTypes from '../../../actionTypes/actionTypes';
 import { updateObject } from '../../../Components/Utilities/utility';
+import { lastUpdatedTime } from '../../../firebase/generalFunctions';
 
 const initialState = {
     // coming soon page fetch from server base details
@@ -8,13 +9,28 @@ const initialState = {
     productsFail: {}
 }
 
+/**
+ * Reducer function for handling the FETCH_PRODUCTS_SUCCESS action.
+ *
+ * @param {Object} state - Current state of the products.
+ * @param {Object} action - Action object containing the fetched products.
+ * @returns {Object} - Updated state after handling the action.
+ */
 const fetchProductsStart = (state, action) => {
     return updateObject(state, {
         productsLoading: true,
     });
 };
 
+/**
+ * Reducer function for handling the FETCH_PRODUCTS_FAIL action.
+ *
+ * @param {Object} state - Current state of the products.
+ * @param {Object} action - Action object containing information about the fetch failure.
+ * @returns {Object} - Updated state after handling the action.
+ */
 const fetchProductsSuccess = (state, action) => {
+    lastUpdatedTime();
     return updateObject(state, {
         productsList: [...action.data],
         productsLoading: false,
@@ -22,6 +38,13 @@ const fetchProductsSuccess = (state, action) => {
     });
 };
 
+/**
+ * Main products reducer function.
+ *
+ * @param {Object} state - Current state of the products.
+ * @param {Object} action - Action object indicating the type of action to perform.
+ * @returns {Object} - Updated state after handling the action.
+ */
 const fetchProductsFail = (state, action) => {
     return updateObject(state, {
         productsLoading: false,

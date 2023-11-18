@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Shopping Cart Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Shopping Cart application! This project allows users to browse a list of products fetched from the FakeStore API, add them to a shopping cart, and perform various cart operations. The application is connected to Firebase for real-time data synchronization.
 
-## Available Scripts
+## Getting Started Locally
 
-In the project directory, you can run:
+Follow these steps to run the application on your local machine:
 
-### `npm start`
+1. Clone the repository from the [GitHub link](https://github.com/AnilKumarKandikonda/shoppingcart).
+2. Navigate to the project folder where `package.json` is located.
+3. Open a terminal and run the command `npm install` to install the required dependencies. This will create a `node_modules` folder in the root of the project.
+4. Once the installation is complete, run `npm start` to start the development server.
+5. The application will be accessible at [http://localhost:3000](http://localhost:3000) in your web browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Structure
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- The application utilizes Firebase for real-time data synchronization. The cart page is connected to Firebase, allowing seamless updates when products are added or removed.
+- FakeStore API is used for fetching product data, providing a dynamic and realistic shopping experience.
+- The project is documented with clear actions and reducers for better understanding and maintainability.
 
-### `npm test`
+## Firebase Integration
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- The application is connected to Firebase for real-time data updates on the cart page.
+- Firebase Realtime Database is utilized for fetching, updating, and deleting cart items.
 
-### `npm run build`
+## Deployment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The application is deployed using Firebase Hosting. You can access the live version at [your-firebase-app-url](https://shyftlabs-d4803.web.app/)

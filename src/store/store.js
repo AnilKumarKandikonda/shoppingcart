@@ -10,6 +10,7 @@ const rootReducer = combineReducers({
     cart: cartReducer,
 });
 
+// Configure the Redux store with the combined reducer, middleware, and DevTools settings
 export default configureStore({
     reducer: rootReducer,
     middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(thunkMiddleware),
