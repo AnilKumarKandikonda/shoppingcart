@@ -6,7 +6,7 @@ Welcome to the Shopping Cart application! This project allows users to browse a 
 
 Follow these steps to run the application on your local machine:
 
-1. Clone the repository from the [GitHub link](https://github.com/AnilKumarKandikonda/shoppingcart).
+1. Clone the repository from the [https://github.com/AnilKumarKandikonda/shoppingcart](https://github.com/AnilKumarKandikonda/shoppingcart).
 2. Navigate to the project folder where `package.json` is located.
 3. Open a terminal and run the command `npm install` to install the required dependencies. This will create a `node_modules` folder in the root of the project.
 4. Once the installation is complete, run `npm start` to start the development server.
@@ -25,4 +25,4 @@ Follow these steps to run the application on your local machine:
 
 ## Deployment
 
-The application is deployed using Firebase Hosting. You can access the live version at [your-firebase-app-url](https://shyftlabs-d4803.web.app/)
+The application is deployed using Firebase Hosting. You can access the live version at [https://shyftlabs-d4803.web.app/](https://shyftlabs-d4803.web.app/)
